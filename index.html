@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        section {
+            margin: 50px 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project {
+            background: #fff;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello, I’m Yiming Li 👋</h1>
-  <p>Welcome to my personal website hosted with GitHub Pages!</p>
+
+    <!-- 顶部导航栏 -->
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT ME</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- 主页 -->
+        <section id="home">
+            <h2>Hello，I'm YimingLi 👋</h2>
+            <p style="text-align:center;">A software engineering student</p>
+        </section>
+
+        <!-- 关于我 -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I love engineering</p>
+        </section>
+
+        <!-- 项目展示 -->
+        <section id="projects">
+            <h2>My Project</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://github.com/LiyimingKyle/Cloud-Computing-Labs" alt="项目1">
+                    <h3>Cloud Computing Labs</h3>
+                    <p>repository of my labs and assignments</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact">
+            <h2>Connect Me</h2>
+            <p>📧 E-mail：2829060816@qq.com</p>
+            <p>💼 GitHub：<a href="https://github.com/liyimingkyle" target="_blank">github.com/liyimingkyle</a></p>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 我的个人网站 | 由 GitHub Pages 提供支持</p>
+    </footer>
+
 </body>
 </html>
